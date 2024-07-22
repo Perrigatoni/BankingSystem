@@ -4,7 +4,17 @@ public class Person {
     private String lastName;
     private String email;
     private int age;
-
+    // Explicit Empty Constructor, not really required but since I use
+    // a proper Constructor below, I'm going to keep this one too
+    public Person () {}
+    // Non Empty Constructor
+    public Person(int id, String firstName, String lastName, String email, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+    }
     // Setters
     public void setId(int id) {
         this.id = id;
